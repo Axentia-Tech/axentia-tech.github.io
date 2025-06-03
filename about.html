@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🩵Axentia🩵 | About</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #080808;
+      position: relative;
+      overflow-x: hidden;
+      min-height: 100vh;
+      color: aqua;
+    }
+
+    .finisher-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+      padding: 20px 50px;
+    }
+
+    .navLink {
+      color: aqua;
+      font-size: 20px;
+      text-decoration: none;
+      transition: 0.2s ease-in-out;
+    }
+
+    .navLink:hover {
+      color: aliceblue;
+      font-size: 23px;
+    }
+
+    .mainContent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .aboutSection {
+      max-width: 1000px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #cfffff;
+    }
+
+    .aboutSection h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: aqua;
+    }
+
+    @media (max-width: 768px) {
+      .aboutSection h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="finisher-header"></div>
+
+  <div class="navbar">
+    <a class="navLink" href="projects.html">Projects</a>
+    <a class="navLink" href="about.html">About</a>
+    <a class="navLink" href="https://github.com/NotLeon-dev" target="_blank">GitHub</a>
+    <a class="navLink" href="index.html">Home</a>
+  </div>
+
+  <div class="mainContent">
+    <div class="aboutSection">
+      <h2>About Axentia</h2>
+      <p>
+        Axentia is more than just a software brand — it's a community-driven platform focused on building high-quality plugins, tools, and digital solutions for Minecraft servers and developers.
+        <br><br>
+        What sets us apart? At Axentia, the community plays a central role in everything we do. From new features to full product ideas, we involve our users at every stage.
+        <br><br>
+        Whether you're a server owner, a developer, or just someone passionate about creating something new — Axentia is your home.
+      </p>
+    </div>
+  </div>
+
+  <script src="finisher-header.es5.min.js"></script>
+  <script>
+    new FinisherHeader({
+      "count": 45,
+      "size": { "min": 2, "max": 13, "pulse": 0 },
+      "speed": { "x": { "min": 0, "max": 0.4 }, "y": { "min": 0, "max": 0.6 } },
+      "colors": { "background": "#000000", "particles": ["#00f7ff", "#ffffff"] },
+      "blending": "overlay",
+      "opacity": { "center": 1, "edge": 0 },
+      "skew": 0,
+      "shapes": ["t", "s"]
+    });
+  </script>
+</body>
+</html>

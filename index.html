@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🩵Axentia🩵 | Beyond limits</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #080808;
+      position: relative;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .finisher-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+      padding: 20px 50px;
+    }
+
+    .navLink {
+      color: aqua;
+      font-size: 20px;
+      text-decoration: none;
+      transition: 0.2s ease-in-out;
+    }
+
+    .navLink:hover {
+      color: aliceblue;
+      font-size: 23px;
+    }
+
+    .mainContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 40px;
+    }
+
+    .motto {
+      color: aqua;
+      font-size: 60px;
+      margin: 0;
+      text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    }
+
+    .umotto {
+      color: aqua;
+      font-size: 25px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .logo { max-width: 300px; }
+      .motto { font-size: 40px; }
+      .umotto { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="finisher-header"></div>
+
+  <div class="navbar">
+    <a class="navLink" href="projects.html">Projects</a>
+    <a class="navLink" href="about.html">About</a>
+    <a class="navLink" href="https://github.com/NotLeon-dev" target="_blank">GitHub</a>
+    <a class="navLink" href="index.html">Home</a>
+  </div>
+
+  <div class="mainContent">
+    <img src="axentialogo.png" class="logo" alt="Axentia Logo" />
+    <h1 class="motto">Making the impossible.</h1>
+    <h2 class="umotto">Software built by 🩵Axentia🩵</h2>
+  </div>
+
+  <script src="finisher-header.es5.min.js"></script>
+  <script>
+    new FinisherHeader({
+      "count": 45,
+      "size": { "min": 2, "max": 13, "pulse": 0 },
+      "speed": { "x": { "min": 0, "max": 0.4 }, "y": { "min": 0, "max": 0.6 } },
+      "colors": { "background": "#000000", "particles": ["#00f7ff", "#ffffff"] },
+      "blending": "overlay",
+      "opacity": { "center": 1, "edge": 0 },
+      "skew": 0,
+      "shapes": ["t", "s"]
+    });
+  </script>
+</body>
+</html>
