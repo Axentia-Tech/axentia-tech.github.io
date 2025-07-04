@@ -74,6 +74,14 @@
       padding: 20px;
       margin: 20px 0;
       border-radius: 10px;
+      transition: transform 0.2s cubic-bezier(.4,2,.6,1), box-shadow 0.2s cubic-bezier(.4,2,.6,1);
+      cursor: pointer;
+    }
+
+    .projectCard:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 32px 0 rgba(0,255,255,0.18), 0 2px 8px 0 rgba(0,0,0,0.12);
+      background-color: rgba(0, 255, 255, 0.10);
     }
 
     @media (max-width: 768px) {
@@ -97,15 +105,16 @@
     <div class="projectsSection">
       <h2>Our Projects</h2>
 
-      <div class="projectCard">
+
+      <a class="projectCard" href="https://www.spigotmc.org/resources/slash-socials.123518/" target="_blank" style="display:block; text-decoration:none; color:inherit;">
         <h3>Slash Socials</h3>
         <p>A all in one Solution to market your Social Media Chanels on your Minecraft Server with Style!</p>
-      </div>
+      </a>
 
-      <div class="projectCard">
-        <h3>Placeholder</h3>
-        <p>Random shit</p>
-      </div>
+      <a class="projectCard" href="https://tmchallenge.fpr.net" target="_blank" style="display:block; text-decoration:none; color:inherit;">
+        <h3>Trailmakers Challenge Generator</h3>
+        <p>Randomly generates challenges for the game Trailmakers for you and your friends to play.</p>
+      </a>
 
     </div>
   </div>
